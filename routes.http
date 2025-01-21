@@ -13,7 +13,7 @@ GET http://localhost:3333/livros
 
 ###
 
-PUT http://localhost:3333/livros/b355edfa-f1d2-42af-8f6a-e35f32764d99
+PUT http://localhost:3333/livros/73ce0752-2d55-4b66-8f38-8545107bf9b4
 Content-Type: application/json
 
 {
@@ -24,9 +24,9 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3333/livros/30288737-3800-48c9-b96c-a1b6ac6fb96c
+PATCH http://localhost:3333/livros/73ce0752-2d55-4b66-8f38-8545107bf9b4
 Content-Type: application/json
 
 {
-    "autor": "thiago brabo"
+    "npaginas": 1235
 }
