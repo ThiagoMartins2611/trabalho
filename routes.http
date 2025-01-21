@@ -1,0 +1,32 @@
+POST http://localhost:3333/livro
+Content-Type: application/json
+
+{
+    "titulo": "memorias postumas de bras cubas",
+    "autor": "Machado de Assis",
+    "npaginas": 400
+}
+
+###
+
+GET http://localhost:3333/livros
+
+###
+
+PUT http://localhost:3333/livros/b355edfa-f1d2-42af-8f6a-e35f32764d99
+Content-Type: application/json
+
+{
+    "titulo": "Duna",
+    "autor": "Frank Hebert",
+    "npaginas": 631
+}
+
+###
+
+PATCH http://localhost:3333/livros/30288737-3800-48c9-b96c-a1b6ac6fb96c
+Content-Type: application/json
+
+{
+    "autor": "thiago brabo"
+}
