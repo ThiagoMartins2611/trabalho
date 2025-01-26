@@ -48,9 +48,8 @@ server.put('/livros/:id', (request, reply) => {
 server.patch('/livros/:id', (request, reply) => {
 
 
-    const livroId = request.params.id
     
-    console.log(request.body)
+    const livroId = request.params.id
     
 
     //passando o restante dos atributos
@@ -86,7 +85,6 @@ server.patch('/livros/:id', (request, reply) => {
 
 
     const livroAtualizado = Object.fromEntries(arrayWaitAtualization);
-    console.log(livroAtualizado);
 
     
     //passamdo dados para serem atualizados
@@ -99,8 +97,13 @@ server.patch('/livros/:id', (request, reply) => {
 })
 
 
-server.delete('/livros/:id', () => {
-    return "Excluir"
+server.delete('/livros/:id', (request, reply) => {
+
+    const livroId = request.params.id
+  
+    database.delete(livroId)
+   
+    return reply.status(204).send()
 })
 
 

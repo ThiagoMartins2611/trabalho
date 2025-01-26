@@ -14,7 +14,7 @@ GET http://localhost:3333/livros
 
 ###
 
-PUT http://localhost:3333/livros/aa5298fd-a2f6-43a0-90fe-7375b9f06a03
+PUT http://localhost:3333/livros/463a3c6c-200e-4e3b-9628-44f02775135e
 Content-Type: application/json
 
 {
@@ -26,10 +26,14 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3333/livros/aa5298fd-a2f6-43a0-90fe-7375b9f06a03
+PATCH http://localhost:3333/livros/d9a79d1b-fdd5-4f81-98d7-08f6e32b2487
 Content-Type: application/json
 
 {
     "npaginas": 1235,
     "tipo": "Ação"
 }
+
+###
+
+DELETE http://localhost:3333/livros/d9a79d1b-fdd5-4f81-98d7-08f6e32b2487
