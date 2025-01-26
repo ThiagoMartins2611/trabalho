@@ -4,6 +4,7 @@ Content-Type: application/json
 {
     "titulo": "memorias postumas de bras cubas",
     "autor": "Machado de Assis",
+    "tipo": "romance",
     "npaginas": 400
 }
 
@@ -13,20 +14,22 @@ GET http://localhost:3333/livros
 
 ###
 
-PUT http://localhost:3333/livros/73ce0752-2d55-4b66-8f38-8545107bf9b4
+PUT http://localhost:3333/livros/aa5298fd-a2f6-43a0-90fe-7375b9f06a03
 Content-Type: application/json
 
 {
     "titulo": "Duna",
     "autor": "Frank Hebert",
+    "tipo": "Drama",
     "npaginas": 631
 }
 
 ###
 
-PATCH http://localhost:3333/livros/73ce0752-2d55-4b66-8f38-8545107bf9b4
+PATCH http://localhost:3333/livros/aa5298fd-a2f6-43a0-90fe-7375b9f06a03
 Content-Type: application/json
 
 {
-    "npaginas": 1235
+    "npaginas": 1235,
+    "tipo": "Ação"
 }

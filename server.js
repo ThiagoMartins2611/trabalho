@@ -8,11 +8,12 @@ const server = fastify()
 
 server.post('/livro', (request, reply) => {
 
-    const {titulo, autor, npaginas} = request.body
+    const {titulo, autor, tipo, npaginas} = request.body
 
     database.create({
         titulo: titulo,
         autor: autor,
+        tipo: tipo,
         npaginas: npaginas
     })
     return reply.status(201).send()
@@ -30,11 +31,12 @@ server.get('/livros', () => {
 server.put('/livros/:id', (request, reply) => {
 
     const livroId = request.params.id
-    const {titulo, autor, npaginas} = request.body
+    const {titulo, autor, tipo, npaginas} = request.body
 
     const livro = database.update(livroId,{
         titulo: titulo,
         autor: autor,
+        tipo: tipo,
         npaginas: npaginas,
     })
 
